@@ -1,12 +1,26 @@
-# React + Vite
+# Email Subject Line Tester
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React.js mini-project to test email subject lines for length, spam likelihood, and inbox preview. Built as part of the Anslation Front End Developer Internship.
 
-Currently, two official plugins are available:
+## About Spam APIs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project simulates spam scoring because most free spam check APIs have CORS restrictions or authentication requirements that prevent direct frontend calls. Using a simulated score ensures the app works fully while demonstrating state management, dynamic updates, and result display.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Subject Input**: Real-time length feedback with warnings.  
+**Spam Score**: Simulated spam analysis (0–5 score). Can be replaced with a real API.  
+**Email Preview**: Dynamic preview of subject in inbox style.  
+**Animations**: Smooth transitions with Framer Motion.
+
+## 🛠 Tech Stack & Packages
+
+- React.js
+- Tailwind CSS
+- Framer Motion
+- Context API for global state  
+  **NPM Packages Installed**:
+
+```bash
+npm install react react-dom framer-motion tailwindcss
+```
